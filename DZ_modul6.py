@@ -148,22 +148,22 @@ def main(folder_path):
     print(folder_path)
     scan(folder_path)
 
-    for file in scan.IMAGES:
+    for file in IMAGES:
         handle_file(file, folder_path, "Images")
 
-    for file in scan.VIDEO:
+    for file in VIDEO:
         handle_file(file, folder_path, "Video")
 
-    for file in scan.DOCS:
+    for file in DOCS:
         handle_file(file, folder_path, "Docs")
 
-    for file in scan.MUSIC:
+    for file in MUSIC:
         handle_file(file, folder_path, "Music")
 
-    for file in scan.OTHER:
+    for file in OTHER:
         handle_file(file, folder_path, "Other")
 
-    for file in scan.ARCHIVES:
+    for file in ARCHIVES:
         handle_archive(file, folder_path, "Archive")
 
     remove_empty_folders(folder_path)
